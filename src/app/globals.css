@@ -160,3 +160,85 @@ a {
   width: 200px;
   height: 50px;
 }
+
+/***** Accounts *****/
+.account-background {
+  width: 100vw;
+  height: 100svh;
+  background-image: url('/joanne-tran-elysium-bg.jpg');
+  background-size: cover;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('/new-menu.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+  margin: auto;
+  padding: 4rem 0;
+  width: 900px;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+.account-form {
+  /* margin: 4rem 0; */
+  box-sizing: border-box;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-button {
+  background-color: #21211f;
+  padding: 1rem;
+  margin: 2rem auto 0 auto;
+  border-radius: 5px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.account-button:hover {
+  background-color: #434341;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 120%;
+}
+
+.input-group>label {
+  margin-right: 1rem;
+}
+
+.input-group>input {
+  padding: .5rem;
+  width: 12rem;
+}
+
+.account-input:focus+label {
+  color: #950104;
+}
+
+.link {
+  color: #c0af57;
+}
+
+.link:hover {
+  color: #950104;
+}
+
+h1:hover {
+  /* color: black; */
+}

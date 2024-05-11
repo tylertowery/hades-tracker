@@ -1,10 +1,21 @@
 'use client'
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import NavBar from "./components/navbar.jsx";
 
 export default function Home() {
   const [signedIn, setSignedIn] = useState(false);
+
+  const router = useRouter();
+
+  const handleCreate = () => {
+    router.push('/create-account');
+  }
+
+  const handleSignIn = () => {
+    router.push('/sign-in');
+  }
 
   return (
     <div className='home-background'>
@@ -13,8 +24,8 @@ export default function Home() {
         <h1>Welcome to Hades Tracker</h1>
         <h3>The best place to keep track of your feats during your travels through the Underworld. </h3>
         <div className='welcome-buttons'>
-          <button>Create Account</button>
-          <button>Sign In</button>
+          <button onClick={handleCreate}>Create Account</button>
+          <button onClick={handleSignIn}>Sign In</button>
         </div>
       </div>
     </div>
