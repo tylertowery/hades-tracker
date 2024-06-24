@@ -242,3 +242,73 @@ a {
 h1:hover {
   /* color: black; */
 }
+
+/***** Tracker Page *****/
+.tracker-page {
+  min-height: 100svh;
+  height: fit-content;
+}
+
+.tracker-background {
+  background-image: url('/joanne-tran-biome-map-art.jpg');
+  background-size: cover;
+}
+
+.tracker-container {
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 1rem;
+  margin: auto;
+  width: 70vw;
+
+}
+
+.section {
+  padding: 1rem 3rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.boons-section {}
+
+.boons-header,
+.weapons-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.boons-list ul,
+.weapons-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.boons-list li,
+.weapons-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.boons-list li::before,
+.weapons-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-40%);
+  width: 14px;
+  height: 14px;
+  background-image: url('/unchecked-box.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
